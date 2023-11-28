@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title> <!-- Pseudo class is used to define a special state of an elememt -->
+
+        <style>
+            a:hover{ 
+                color: red;
+                font-weight: bold;
+            }
+
+            a:active{
+                color: green;
+                font-weight: bold;
+            }
+            .myForm input:focus{
+                background: pink;
+                width: 300px;
+            }
+
+            .myList li:first-child{
+                color: rgb(12, 96, 12);
+                font-weight: bold;
+            }
+
+            .myList li:last-child{
+                color: red;
+                font-weight: bold;
+            }
+
+            .myList li:nth-child(3n+3){
+                color: orange;
+                font-weight: bold;
+            }
+
+            .myList li:nth-child(even){
+                background: yellow;
+                font-weight: bold;
+            }
+
+            .myList li:nth-child(odd){
+                background: grey;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Click Me</a>
+
+        <form class="myForm"> <!-- Forms are input that has the state called focus and that's when you actually lick inside of the input-->
+            <input type="text">
+        </form>
+
+        <ul class="myList">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+
+        </ul>
+    </body>
+</html>
